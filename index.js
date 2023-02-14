@@ -2,12 +2,12 @@ import readlineSync from "readline-sync";
 
 
 const propriedades = [];
-let inserir = "";
+let condicao = "";
 
-while (inserir != "sair") {
-  propriedades.push(inserir);
-  inserir = readlineSync
-    .question("insira uma propriedade CSS: ")
+while (condicao != "sair") {
+  propriedades.push(condicao);
+  condicao = readlineSync
+    .question("insira uma condiçao CSS: ")
     .toLocaleLowerCase();
 }
 console.log((propriedades.sort().join("\n")));
